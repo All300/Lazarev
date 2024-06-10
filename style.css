@@ -282,6 +282,7 @@ nav h1 {
     height: 7vw;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
     position: absolute;
     opacity: 0;
 }
