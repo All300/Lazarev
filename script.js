@@ -1,6 +1,6 @@
 function navAnimaion() {
     var navElem = document.querySelectorAll(".nav-elem")
-var nav = document.querySelector("nav")
+    var nav = document.querySelector("nav")
 
 navElem.forEach(element => {
     element.addEventListener("mouseenter", function() {
@@ -42,4 +42,34 @@ nav.addEventListener("mouseleave", function() {
 });
 }
 
-navAnimaion();
+function page2Animation() {
+    var rightElems = document.querySelectorAll(".right-elem")
+
+rightElems.forEach(function(elem) {
+    elem.addEventListener("mouseenter", function(dets) {
+        console.log(dets.x)
+        gsap.to(elem.childNodes[3], {
+            opacity: 1,
+            scale: 1
+        })
+    })
+    elem.addEventListener("mouseleave", function() {
+        gsap.to(elem.childNodes[3], {
+            opacity: 0,
+            scale: 0
+        })
+    })
+    elem.addEventListener("mousemove", function(dets) {
+        console.log(dets.y)
+        console.log(elem.getBoundingClientRect())
+        gsap.to(elem.childNodes[3], {
+            x: dets.x - elem.getBoundingClientRect().x - elem.childNodes[3].getBoundingClientRect().width/2,
+            y: dets.y - elem.getBoundingClientRect().y - elem.getBoundingClientRect().height + 12
+        })
+    })
+})
+}
+
+navAnimaion();   
+
+page2Animation()

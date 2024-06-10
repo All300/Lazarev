@@ -10,6 +10,10 @@
     font-family: gilroy-medium;
     src: url(font/Gilroy-Medium.ttf);
 }
+@font-face {
+    font-family: gilroy-regular;
+    src: url(font/Gilroy-Regular.ttf);
+}
 
 *{
     margin: 0;
@@ -100,14 +104,14 @@ nav h1 {
 }
 
 #page1 {
-    height: 120vh;
+    height: 127vh;
     width: 100%;
     background-color: #111;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3vw;
+    /* padding-top: 3vw; */
     position: relative;
 }
 
@@ -158,7 +162,7 @@ nav h1 {
 #moving-div{
     /* background-color: red; */
     position: absolute;
-    bottom: 1%;
+    bottom: 9%;
     white-space: nowrap;
     padding: 0.8vw;
     overflow: hidden;
@@ -216,4 +220,68 @@ nav h1 {
     height: 100vh;
     width: 100%;
     background-color: #111;
+    position: relative;
+    padding: 0 6vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+
+}
+
+#page2-left p {
+    font-size: 1vw;
+    font-family: gilroy-medium;
+}
+#page2-left h5 {
+    font-size: 1.1vw;
+    font-family: gilroy-medium;
+    font-weight: 500;
+    width: 73%;
+    line-height: 1.6vw;
+}
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* padding: 3vw 0; */
+    /* background-color: #333; */
+}
+
+.right-elem {
+    padding: 1.7vw 0;
+    position: relative;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem:nth-last-child(1){
+    border: none;
+}
+
+.right-elem h2 {
+    font-size: 1.6vw;
+    font-family: gilroy-medium;
+    font-weight: 500;
+    width: 73%;
+}
+
+.right-elem img{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
 }
