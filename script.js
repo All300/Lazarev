@@ -47,7 +47,6 @@ function page2Animation() {
 
 rightElems.forEach(function(elem) {
     elem.addEventListener("mouseenter", function(dets) {
-        console.log(dets.x)
         gsap.to(elem.childNodes[3], {
             opacity: 1,
             scale: 1
@@ -60,7 +59,6 @@ rightElems.forEach(function(elem) {
         })
     })
     elem.addEventListener("mousemove", function(dets) {
-        console.log(dets.y)
         console.log(elem.getBoundingClientRect())
         gsap.to(elem.childNodes[3], {
             x: dets.x - elem.getBoundingClientRect().x - elem.childNodes[3].getBoundingClientRect().width/2,
@@ -70,6 +68,31 @@ rightElems.forEach(function(elem) {
 })
 }
 
-navAnimaion();   
+function page3VideoAnimation() {
+    var page3Icon = document.querySelector(".icon")
+var video = document.querySelector("#page3 video")
+
+page3Icon.addEventListener("click", function() {
+    video.play()
+    gsap.to(video, {
+        opacity: 1,
+        transform: "scaleX(1) scaleY(1)",
+        borderRadius: 0,
+        duration: 1.2
+    })
+})
+
+video.addEventListener("click", function () {
+    video.pause()
+    gsap.to(video, {
+        opacity: 0,
+        transform: "scaleX(0) scaleY(0)",
+    })
+})
+}
+
+navAnimaion()  
 
 page2Animation()
+
+page3VideoAnimation()
