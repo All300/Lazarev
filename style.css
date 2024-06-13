@@ -520,3 +520,69 @@ nav h1 {
     line-height: 3.2vw;
     width: 100%;
 }
+
+#page7 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #000000; */
+    position: relative;
+}
+
+.section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1vh 6vw;
+}
+
+.sec-left {
+    height: 90%;
+    width: 25%;
+    /* background-color: aqua; */
+    border-top: 2px solid #dcdcdc;
+    padding-top: 3vh;
+}
+
+.sec-left h2 {
+    font-family: gilroy-medium;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: #111;
+    margin-bottom: 7vw;
+}
+
+.sec-left p {
+    font-family: gilroy-medium;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #111;
+    line-height: 1.6vw;
+}
+
+.sec-right {
+    height: 90%;
+    width: 70%;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+
+
+.sec-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec-right video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease 0.3s;
+}

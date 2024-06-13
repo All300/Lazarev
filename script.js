@@ -91,8 +91,27 @@ video.addEventListener("click", function () {
 })
 }
 
+function page7Animation() {
+    var sections = document.querySelectorAll(".sec-right")
+var para = document.querySelectorAll(".sec-right p")
+
+sections.forEach(function(elem) {
+    elem.addEventListener("mouseenter", function(dets){
+        elem.childNodes[3].style.opacity=1
+        elem.childNodes[3].play()
+
+    })
+    elem.addEventListener("mouseleave", function(){
+        elem.childNodes[3].style.opacity=0
+        elem.childNodes[3].load()
+    })
+})
+}
+
 navAnimaion()  
 
 page2Animation()
 
 page3VideoAnimation()
+
+page7Animation()
