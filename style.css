@@ -673,3 +673,25 @@ nav h1 {
     opacity: 0;
     z-index: 9;
 }
+
+#page9 {
+    height: 65vh;
+    background-color: #111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#page9-container {
+    height: 100%;
+    width: 90%;
+    border-bottom: 2px solid #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page9-container h2 {
+    font-size: 4vw;
+    line-height: 4.5vw;
+}
