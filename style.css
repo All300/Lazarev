@@ -695,3 +695,166 @@ nav h1 {
     font-size: 4vw;
     line-height: 4.5vw;
 }
+
+#page10 {
+    min-height: 100vh;
+    background-color: #111;
+    width: 100%;
+    position: relative;
+    padding: 12vh 6vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#page10>button {
+    background-color: #0BA34E;
+    padding: 1.5vw 4.3vw;
+    font-size: 0.9vw;
+    font-family: gilroy-medium;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    position: sticky;
+    top: 20%;
+}
+
+
+#page10-right {
+    width: 72%;
+}
+
+#page10-right> p span {
+    width: 20vw;
+    display: inline-block;
+    font-size: 1.1vw;
+    font-family: gilroy-medium;
+    letter-spacing: 0vw;
+}
+
+#page10-right>p{
+    font-size: 2.4vw;
+    font-family: gilroy-medium;
+    letter-spacing: -0.1vw;
+}
+
+#page10-content {
+    width: 100%;
+    margin-top: 13vh;
+}
+
+#page10-content h1 {
+    font-size: 3vw;
+    font-family: gilroy-medium;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.heading i {
+    font-size: 1.5vw;
+    transition: all ease 0.3s;
+}
+
+#page10-content #flex {
+    display: flex;
+    margin-top: 6vh;
+}
+
+#page10-content #flex h4 {
+    padding: 0.5vw 1vw;
+    border: 1px solid #565656;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+}
+
+#page10-container {
+    margin-top: 2.3vw;
+}
+
+.page10-elem {
+    border-top: 1px solid #343434;
+    padding: 1.5vw 0vw 4.5vw 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.1s;
+}
+
+.page10-elem h3 {
+    font-size: 1.8vw;
+    font-family: gilroy-medium;
+    font-weight: 500;
+    position: relative;
+    z-index: 8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.page10-elem p {
+    width: 51%;
+    letter-spacing: -0.9px;
+    font-size: 1vw;
+    font-family: gilroy-medium;
+    position: relative;
+    z-index: 8;
+}
+
+.page10-elem i {
+    font-size: 1.3vw;
+    position: relative;
+    z-index: 8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.over {
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.page10-elem:hover {
+    border-top: 2px solid #fff;
+}
+
+.page10-elem:hover h3 {
+    padding-left: 1vw;
+}
+.page10-elem:hover i {
+    padding-right: 1vw;
+}
+
+
+details>summary{
+    list-style: none;
+}
+
+.uiux{
+    border-top: 2px solid #fff;
+    padding-top: 3vh;
+}
+.product{
+    border-top: 2px solid #fff;
+    padding-top: 3vh;
+    margin-bottom: 25vh;
+}
+
+details{
+    margin-bottom: 3vw;
+}
+
+details[open]{
+    margin-bottom: 0vw;
+}

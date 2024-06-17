@@ -149,6 +149,56 @@ function page8Animation() {
     })
 }
 
+function page10Details(){
+    var headingIcons = document.querySelectorAll(".heading i")
+var details = document.querySelectorAll("details")
+
+details.forEach(function(elem,i) {
+    elem.addEventListener("toggle", function(event){
+        if(elem.open){
+            headingIcons[i].classList.remove("ri-arrow-down-s-line")
+            headingIcons[i].classList.add("ri-arrow-up-s-line")
+        }
+        else {
+            headingIcons[i].classList.remove("ri-arrow-up-s-line")
+            headingIcons[i].classList.add("ri-arrow-down-s-line")
+        }
+    })
+});
+}
+
+function page10Animation() {
+    var page10Elem = document.querySelectorAll(".page10-elem")
+    var over = document.querySelectorAll(".over")
+
+    page10Elem.forEach(function(elem, i) {
+        elem.addEventListener("mouseenter", function() {
+            gsap.to(over[i], {
+                y:"0%",
+                opacity: 1,
+                duration: 0.1
+            })
+        })
+    })
+    page10Elem.forEach(function(elem, i) {
+        elem.addEventListener("mouseleave", function() {
+            var tl = gsap.timeline()
+            tl.to(over[i], {
+                y: "100%",
+                duration: 0.1
+            })
+            tl.to(over[i],{
+                opacity: 0,
+                duration: 0.3
+            })
+            tl.to(over[i], {
+                y: "-100%",
+                duration:0
+            })
+        })
+    })
+}
+
 navAnimaion()    
 
 page2Animation()
@@ -158,3 +208,7 @@ page3VideoAnimation()
 page7Animation()
 
 page8Animation()
+
+page10Animation()
+
+page10Details()
