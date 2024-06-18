@@ -74,6 +74,8 @@ function page3VideoAnimation() {
 
     page3Icon.addEventListener("click", function() {
         video.play()
+        video.style.position = "fixed",
+        video.style.top = "0"
         gsap.to(video, {
             opacity: 1,
             transform: "scaleX(1) scaleY(1)",
@@ -199,6 +201,21 @@ function page10Animation() {
     })
 }
 
+function page11Animation(){
+    gsap.from(".btm11-parts h5", {
+        x: 0,
+        // duration: 1,
+        scrollTrigger: {
+            trigger: "#btm11-part2",
+            scroller: "body",
+            // markers: true,
+            start: "top 75%",
+            end: "top -25%",
+            scrub: 4
+        }
+    })
+}
+
 navAnimaion()    
 
 page2Animation()
@@ -212,3 +229,5 @@ page8Animation()
 page10Animation()
 
 page10Details()
+
+page11Animation()
