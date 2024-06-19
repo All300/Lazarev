@@ -36,16 +36,30 @@ function bg() {
             trigger: "#page1 h1",
             scroller: "#main",
             // markers: true,
+            start: "top 60%",
+            end: "top 55%",
+            scrub: 3
+        }
+    })
+
+    tl1.to("#main", {
+        backgroundColor: "#111"
+    })
+    var tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#page1 h1",
+            scroller: "#main",
+            // markers: true,
             start: "top -250%",
             end: "top -255%",
             scrub: 3
         }
     })
 
-    tl1.to("#main", {
+    tl2.to("#main", {
         backgroundColor: "#fff"
     })
-    var tl2 = gsap.timeline({
+    var tl3 = gsap.timeline({
         scrollTrigger: {
             trigger: "#page1 h1",
             scroller: "#main",
@@ -56,8 +70,37 @@ function bg() {
         }
     })
 
-    tl2.to("#main", {
+    tl3.to("#main", {
         backgroundColor: "#111"
+    })
+}
+
+function loadingAniamtion() {
+    var tl = gsap.timeline()
+    tl.from("#page1", {
+        opacity: 0,
+        duration: 0.3,
+        delay: 0.2
+    })
+
+    tl.from("#page1", {
+        transform: "scaleX(0.7) scaleY(0)",
+        borderRadius: "150px",
+        duration: 1,
+        ease: "power2.out"
+    })
+
+    tl.from("nav", {
+        opacity: 0,
+        duration: 0.1
+        // delay: -0.2
+    })
+
+    tl.from("#page1 h1, #page1 p, #page1 div", {
+        y: 50,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.1
     })
 }
 
@@ -298,3 +341,5 @@ page10Animation()
 page10Details()
 
 page11Animation()
+
+loadingAniamtion()
