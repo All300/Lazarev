@@ -1051,6 +1051,101 @@ details[open]{
 }
 
 #page12 {
-    height: 100vh;
+    padding: 25vh 0 7vh 0;
+    min-height: 100vh;
+    width: 100%;
     background-color: #111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#page12-container {
+    /* background-color: red; */
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7vw;
+}
+
+#page12-left {
+    width: 49%;
+    position: sticky;
+    top: 20%;
+}
+
+#page12-left h3 {
+    font-size: 1vw;
+    font-family: gilroy-medium;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+
+#page12-left h4 {
+    font-size: 3.3vw;
+    font-family: gilroy-medium;
+    font-weight: 600;
+    margin-bottom: 6vw;
+}
+#page12-left p {
+    width: 58%;
+    font-size: 0.9vw;
+    font-family: gilroy-medium;
+    font-weight: 600;
+}
+
+#page12-right {
+    width: 49%;
+    
+}
+
+.testimonial{
+    padding-top: 6vh;
+    margin-bottom: 7vw;
+    border-top: 1px solid #494949;
+}
+
+.testimonial>h5 {
+    font-size: 0.9vw;
+    font-family: gilroy-medium;
+    font-weight: 600;
+    margin-bottom: 3vw;
+}
+
+.testimonial>p {
+    font-size: 1.5vw;
+    font-family: gilroy-medium;
+    font-weight: 500;
+    margin-bottom: 6vw;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5vw;
+}
+
+.person img {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+}
+
+.person-name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.9vw;
+}
+
+.person-name p:nth-child(1) {
+    font-size: 1.2vw;
+    font-family: gilroy-medium;
+}
+.person-name p:nth-child(2) {
+    font-family: gilroy-medium;
+    font-weight: 600;
 }
